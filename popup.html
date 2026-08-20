@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="popup.css">
+    <title>TER Quick Fill</title>
+  </head>
+  <body>
+    <main>
+      <h1>TER Quick Fill</h1>
+      <p class="intro">Choose a rating, then open a TER form and click <strong>Fill form</strong>.</p>
+
+      <label for="rating">Rating for every question</label>
+      <select id="rating">
+        <option value="strongly agree">Strongly agree</option>
+        <option value="agree">Agree</option>
+        <option value="neutral">Neutral</option>
+        <option value="disagree">Disagree</option>
+        <option value="strongly disagree">Strongly disagree</option>
+      </select>
+
+      <button id="fill" class="primary">Fill form</button>
+      <button id="next">Open next pending TER</button>
+      <p id="status" role="status"></p>
+      <p class="note">The extension never submits an evaluation. Review the answers and use the site’s Submit TER button yourself.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

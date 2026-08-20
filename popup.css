@@ -1,0 +1,13 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; }
+body { width: 300px; margin: 0; color: #17212b; }
+main { padding: 16px; }
+h1 { font-size: 18px; margin: 0 0 8px; }
+.intro, .note { font-size: 13px; line-height: 1.4; }
+label { display: block; font-size: 13px; font-weight: 650; margin-top: 14px; }
+select, button { box-sizing: border-box; width: 100%; margin-top: 6px; min-height: 36px; border-radius: 6px; font: inherit; }
+select { border: 1px solid #aab4bd; padding: 0 8px; background: #fff; }
+button { border: 1px solid #087e3e; background: #fff; color: #087e3e; cursor: pointer; font-weight: 650; }
+button.primary { background: #087e3e; color: #fff; }
+button:hover { filter: brightness(.96); }
+#status { min-height: 18px; margin: 10px 0 0; font-size: 13px; }
+.note { color: #59636e; border-top: 1px solid #e2e6e9; margin: 12px 0 0; padding-top: 12px; }
