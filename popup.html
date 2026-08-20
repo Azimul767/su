@@ -3,28 +3,120 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="popup.css">
+
     <title>TER Quick Fill</title>
   </head>
+
   <body>
     <main>
-      <h1>TER Quick Fill</h1>
-      <p class="intro">Choose a rating, then open a TER form and click <strong>Fill form</strong>.</p>
 
-      <label for="rating">Rating for every question</label>
+      <h1>TER Quick Fill</h1>
+
+      <p class="intro">
+        Choose a rating, then open a TER form and click
+        <strong>Fill form</strong>.
+      </p>
+
+
+      <!-- Rating -->
+      <label for="rating">
+        Rating for every question
+      </label>
+
       <select id="rating">
-        <option value="strongly agree">Strongly agree</option>
-        <option value="agree">Agree</option>
-        <option value="neutral">Neutral</option>
-        <option value="disagree">Disagree</option>
-        <option value="strongly disagree">Strongly disagree</option>
+        <option value="strongly agree">
+          Strongly agree
+        </option>
+
+        <option value="agree">
+          Agree
+        </option>
+
+        <option value="neutral">
+          Neutral
+        </option>
+
+        <option value="disagree">
+          Disagree
+        </option>
+
+        <option value="strongly disagree">
+          Strongly disagree
+        </option>
       </select>
 
-      <button id="fill" class="primary">Fill form</button>
-      <button id="next">Open next pending TER</button>
-      <p id="status" role="status"></p>
-      <p class="note">The extension never submits an evaluation. Review the answers and use the site’s Submit TER button yourself.</p>
+
+      <!-- Manual actions -->
+      <button id="fill" class="primary">
+        Fill form
+      </button>
+
+      <button id="next">
+        Open next pending TER
+      </button>
+
+
+      <!-- Auto advance -->
+      <label class="checkbox">
+        <input
+          type="checkbox"
+          id="autoMode"
+        >
+
+        Auto-advance after I click the site's Submit TER button
+      </label>
+
+
+      <p
+        id="status"
+        role="status"
+      ></p>
+
+
+      <p class="note">
+        Auto-advance reacts to your own click on the site's
+        Submit TER button, then opens and refills the next
+        pending course.
+      </p>
+
+
+      <hr>
+
+
+      <!-- Full Auto -->
+      <h2>
+        Full auto-submit
+      </h2>
+
+      <p
+        class="note"
+        id="fullAutoStatus"
+      >
+        Ready
+      </p>
+
+
+      <button
+        id="fullAutoStart"
+        class="primary"
+      >
+        Run full auto loop
+      </button>
+
+
+      <button
+        id="fullAutoStop"
+      >
+        Stop
+      </button>
+
+      <pre id="fullAutoLog"></pre>
+
     </main>
+
+
     <script src="popup.js"></script>
   </body>
 </html>

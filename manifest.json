@@ -1,9 +1,12 @@
 {
   "manifest_version": 3,
   "name": "TER Quick Fill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fill teaching-evaluation ratings quickly, one course at a time.",
-  "permissions": ["storage", "activeTab"],
+  "permissions": ["storage", "activeTab", "debugger"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_title": "TER Quick Fill",
     "default_popup": "popup.html"

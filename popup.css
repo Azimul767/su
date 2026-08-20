@@ -9,5 +9,11 @@ select { border: 1px solid #aab4bd; padding: 0 8px; background: #fff; }
 button { border: 1px solid #087e3e; background: #fff; color: #087e3e; cursor: pointer; font-weight: 650; }
 button.primary { background: #087e3e; color: #fff; }
 button:hover { filter: brightness(.96); }
+.checkbox { display: flex; align-items: center; gap: 8px; font-weight: 500; margin-top: 14px; }
+.checkbox input { width: auto; margin: 0; min-height: auto; }
 #status { min-height: 18px; margin: 10px 0 0; font-size: 13px; }
+hr { border: none; border-top: 1px solid #e2e6e9; margin: 16px 0; }
+h2 { font-size: 14px; margin: 0 0 4px; }
+code { background: #f4f6f8; padding: 1px 4px; border-radius: 3px; font-size: 12px; }
+#fullAutoLog { background: #10151b; color: #b7f5c8; font-size: 11px; padding: 8px; border-radius: 6px; max-height: 120px; overflow-y: auto; white-space: pre-wrap; margin-top: 10px; }
 .note { color: #59636e; border-top: 1px solid #e2e6e9; margin: 12px 0 0; padding-top: 12px; }
